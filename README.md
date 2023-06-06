@@ -6,4 +6,4 @@
 | 02 | myTodoList | firebase를 이용한 투두 리스트 | <a href="./myTodoList">바로가기</a> |
 | 03 | RPSGame | 가위바위보 게임 | <a href="./RPSGame">바로가기</a> |
 | 04 | UpDownGame | 업다운 게임 | <a href="./UpDownGame">바로가기</a> |
-| 05 | DiceGame | 가위바위보 게임 | <a href="./DiceGame">바로가기</a> |
+| 05 | DiceGame | 주사위 게임 | <a href="./DiceGame">바로가기</a> |
