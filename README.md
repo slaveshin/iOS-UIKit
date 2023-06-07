@@ -1,6 +1,6 @@
 # practice-applications-iOS
 
-| 순번 | 앱 이름 | 설명 | 비고 |
+| 순번 | 앱 이름 | 설명 | 참고 |
 | :-----: | :-----: | :-----: | :-----: |
 | 00 | <a href="./MyFirstApp">MyFirstApp</a> | 연습용 첫번째 앱 | `Xcode`, `storyboard`, `colorLiteral`, `viewDidLoad()` |
 | 01 | <a href="./DiceGame">DiceGame</a> | 주사위 게임 | `storyboard`, `auto layout`, `assets` |
