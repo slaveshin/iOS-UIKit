@@ -2,7 +2,7 @@
 
 | 순번 | 앱 이름 | 설명 | 참고 |
 | :-----: | :-----: | :-----: | :-----: |
-| 00 | <a href="./MyFirstApp">MyFirstApp</a> | 연습용 첫번째 앱 | `Xcode`, `storyboard`, `colorLiteral`, `viewDidLoad()` |
+| 00 | <a href="./MyFirstApp">MyFirstApp</a> | Xcode랑 친해지기 | `Xcode`, `storyboard`, `colorLiteral`, `viewDidLoad()` |
 | 01 | <a href="./DiceGame">DiceGame</a> | 주사위 게임 | `storyboard`, `auto layout`, `assets` |
 | 02 | <a href="./RPSGame">RPSGame</a> | 가위바위보 게임 | `storyboard`, `auto layout`, `enum`  |
 | 03 | <a href="./UpDownGame">UpDownGame</a> | 업다운 게임 | `storyboard`, `auto layout` |
