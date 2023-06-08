@@ -26,6 +26,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.borderStyle = .roundedRect
         textField.clearButtonMode = .always
         textField.returnKeyType = .google
+        
+        // focus 느낌
+        textField.becomeFirstResponder()
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
