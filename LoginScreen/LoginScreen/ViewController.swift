@@ -78,6 +78,7 @@ class ViewController: UIViewController {
         button.setTitle("표시", for: .normal)
         button.setTitleColor(UIColor.lightGray, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        button.addTarget(self, action: #selector(passwordSecureButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -109,6 +110,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .clear
         button.setTitle("비밀번호 재설정", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        button.addTarget(self, action: #selector(resetButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -191,7 +193,28 @@ class ViewController: UIViewController {
             stackView.heightAnchor.constraint(equalToConstant: textViewHeight * 3 + 36)
         ])
     }
+    
+    @objc func resetButtonTapped() {
+        let alert = UIAlertController(title: "비밀번호 바꾸기",
+                                      message: "비밀번호를 바꾸시겠습니까?",
+                                      preferredStyle: .alert)
+        
+        let success = UIAlertAction(title: "확인", style: .default) { action in
+            print("확인 버튼이 눌렸습니다.")
+        }
+        
+        let cancel = UIAlertAction(title: "취소", style: .default) { cancel in
+            print("취소 버튼이 눌렸습니다.")
+        }
+        
+        alert.addAction(success)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
 
-
+    @objc func passwordSecureButtonTapped() {
+        passwordTextField.isSecureTextEntry.toggle()
+    }
 }
 
