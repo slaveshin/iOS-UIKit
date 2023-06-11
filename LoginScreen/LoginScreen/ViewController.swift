@@ -105,6 +105,14 @@ class ViewController: UIViewController {
         return sv
     }()
     
+    private let passwordResetButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .clear
+        button.setTitle("비밀번호 재설정", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        return button
+    }()
+    
     private let textViewHeight: CGFloat = 48
     
     override func viewDidLoad() {
@@ -117,11 +125,13 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.black
         
         view.addSubview(stackView)
+        view.addSubview(passwordResetButton)
         
         emailInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         passwordSecureButton.translatesAutoresizingMaskIntoConstraints = false
+        passwordResetButton.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -163,6 +173,14 @@ class ViewController: UIViewController {
                 .constraint(equalTo: passwordTextFieldView.bottomAnchor, constant: -15),
             passwordSecureButton.trailingAnchor
                 .constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: -8),
+            
+            passwordResetButton.topAnchor
+                .constraint(equalTo: stackView.bottomAnchor, constant: 10),
+            passwordResetButton.leadingAnchor
+                .constraint(equalTo: view.leadingAnchor, constant: 30),
+            passwordResetButton.trailingAnchor
+                .constraint(equalTo: view.trailingAnchor, constant: -30),
+            passwordResetButton.heightAnchor.constraint(equalToConstant: textViewHeight),
             
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -120),
