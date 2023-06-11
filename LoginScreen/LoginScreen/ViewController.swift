@@ -42,8 +42,7 @@ class ViewController: UIViewController {
     
     private lazy var passwordTextFieldView: UIView = {
         let view = UIView()
-        view.frame.size.height = 48
-        view.backgroundColor = UIColor.darkGray
+        view.backgroundColor = .darkGray
         view.layer.cornerRadius = 5
         view.clipsToBounds = true
         view.addSubview(passwordTextField)
@@ -129,6 +128,7 @@ class ViewController: UIViewController {
         
         emailInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         passwordSecureButton.translatesAutoresizingMaskIntoConstraints = false
         passwordResetButton.translatesAutoresizingMaskIntoConstraints = false
@@ -138,34 +138,34 @@ class ViewController: UIViewController {
             emailInfoLabel.leadingAnchor
                 .constraint(equalTo: emailTextFieldView.leadingAnchor, constant: 8),
             emailInfoLabel.trailingAnchor
-                .constraint(equalTo: emailTextFieldView.trailingAnchor, constant: 8),
+                .constraint(equalTo: emailTextFieldView.trailingAnchor, constant: -8),
             emailInfoLabel.centerYAnchor
                 .constraint(equalTo: emailTextFieldView.centerYAnchor),
             
             emailTextField.leadingAnchor
                 .constraint(equalTo: emailTextFieldView.leadingAnchor, constant: 8),
             emailTextField.trailingAnchor
-                .constraint(equalTo: emailTextFieldView.trailingAnchor, constant: 8),
+                .constraint(equalTo: emailTextFieldView.trailingAnchor, constant: -8),
             emailTextField.topAnchor
                 .constraint(equalTo: emailTextFieldView.topAnchor, constant: 15),
             emailTextField.bottomAnchor
-                .constraint(equalTo: emailTextFieldView.bottomAnchor, constant: 2),
+                .constraint(equalTo: emailTextFieldView.bottomAnchor, constant: -2),
             
             passwordInfoLabel.leadingAnchor
                 .constraint(equalTo: passwordTextFieldView.leadingAnchor, constant: 8),
             passwordInfoLabel.trailingAnchor
-                .constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: 8),
+                .constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: -8),
             passwordInfoLabel.centerYAnchor
                 .constraint(equalTo: passwordTextFieldView.centerYAnchor),
             
             passwordTextField.leadingAnchor
                 .constraint(equalTo: passwordTextFieldView.leadingAnchor, constant: 8),
             passwordTextField.trailingAnchor
-                .constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: 8),
+                .constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: -8),
             passwordTextField.topAnchor
                 .constraint(equalTo: passwordTextFieldView.topAnchor, constant: 15),
             passwordTextField.bottomAnchor
-                .constraint(equalTo: passwordTextFieldView.bottomAnchor, constant: 2),
+                .constraint(equalTo: passwordTextFieldView.bottomAnchor, constant: -2),
             
             passwordSecureButton.topAnchor
                 .constraint(equalTo: passwordTextFieldView.topAnchor, constant: 15),
