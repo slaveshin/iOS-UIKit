@@ -6,4 +6,4 @@
 
 ### main screen
 
-<img src="" width="300"/>
+<img src="https://github.com/slaveshin/practice-applications-iOS/assets/68256612/e6fdf5cc-9297-40c7-88bd-2cdd5a5b2203" width="300"/>
