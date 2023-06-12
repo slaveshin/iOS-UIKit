@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         tf.autocorrectionType = .no
         tf.spellCheckingType = .no
         tf.keyboardType = .emailAddress
+        tf.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
         return tf
     }()
     
@@ -70,6 +71,7 @@ class ViewController: UIViewController {
         tf.spellCheckingType = .no
         tf.isSecureTextEntry = true
         tf.clearsOnBeginEditing = false
+        tf.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
         return tf
     }()
     
@@ -222,6 +224,11 @@ class ViewController: UIViewController {
     @objc func passwordSecureButtonTapped() {
         passwordTextField.isSecureTextEntry.toggle()
     }
+    
+    // 텍스트 필드 아닌곳 터치했을때 키보드 내리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -258,8 +265,26 @@ extension ViewController: UITextFieldDelegate {
                 passwordInfoLabelCenterYConstraint.constant = 0
             }
         }
+        
         UIView.animate(withDuration: 0.1) {
             self.stackView.layoutIfNeeded()
         }
+    }
+    
+    @objc func textFieldEditingChanged(textField: UITextField) {
+        if textField.text?.count == 1 {
+            if textField.text?.first == " " {
+                textField.text = ""
+                return
+            }
+        }
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty else {
+            loginButton.backgroundColor = .clear
+            loginButton.isEnabled = true
+            return
+        }
+        loginButton.backgroundColor = .red
+        loginButton.isEnabled = true
     }
 }
