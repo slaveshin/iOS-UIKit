@@ -1,6 +1,6 @@
 # NextVC(iOS)
 
-`storyboard` `segue` `delegate pattern` `responder`
+`storyboard` `segue`
 <br><br>
 4가지 화면 이동 연습<br>
 

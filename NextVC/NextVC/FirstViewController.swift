@@ -16,8 +16,7 @@ class FirstViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .blue
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.addTarget(FirstViewController.self,
-                         action: #selector(backButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
         
         return button
     }()
@@ -56,6 +55,6 @@ class FirstViewController: UIViewController {
     
     
     @objc func backButtonTapped() {
-        
+        dismiss(animated: true, completion: nil)
     }
 }

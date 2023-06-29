@@ -17,6 +17,9 @@ class MainViewController: UIViewController {
     // 1) 코드로 화면 이동(단, 다음 화면이 코드로 작성되어 있을때만 가능함)
     @IBAction func codeNextButtonTapped(_ sender: Any) {
         let firstVC = FirstViewController()
+        
+        firstVC.someString = "아기상어"
+        
         firstVC.modalPresentationStyle = .fullScreen
         present(firstVC, animated: true, completion: nil)
     }
