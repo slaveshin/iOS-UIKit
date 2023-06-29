@@ -67,9 +67,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="StoryBoard with Button Segue">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <action selector="storyboardWithButtonSegueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0h3-Yj-wwJ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -85,6 +82,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56" y="-31"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="uFJ-d6-pkV">
+            <objects>
+                <viewController storyboardIdentifier="secondVC" id="WRt-cZ-7F5" customClass="SecondViewController" customModule="NextVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xrV-dR-NpX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XY-Op-wvB">
+                                <rect key="frame" x="90.666666666666686" y="414" width="212" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABp-sl-jky">
+                                <rect key="frame" x="165.66666666666666" y="743" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="WRt-cZ-7F5" eventType="touchUpInside" id="EGh-9P-sPx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mMi-sx-5Ah"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1XY-Op-wvB" firstAttribute="centerX" secondItem="xrV-dR-NpX" secondAttribute="centerX" id="D4J-fa-2Tm"/>
+                            <constraint firstItem="ABp-sl-jky" firstAttribute="centerX" secondItem="xrV-dR-NpX" secondAttribute="centerX" id="Rfp-p3-c4U"/>
+                            <constraint firstItem="1XY-Op-wvB" firstAttribute="centerY" secondItem="xrV-dR-NpX" secondAttribute="centerY" id="W3G-3u-8EH"/>
+                            <constraint firstItem="mMi-sx-5Ah" firstAttribute="bottom" secondItem="ABp-sl-jky" secondAttribute="bottom" constant="40" id="cJu-gj-Vb6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="1XY-Op-wvB" id="BUf-nI-Cua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfP-lr-jGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-169"/>
         </scene>
     </scenes>
     <resources>

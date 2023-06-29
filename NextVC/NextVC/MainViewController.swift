@@ -26,13 +26,13 @@ class MainViewController: UIViewController {
     
     // 2) 코드로 스토리보드 객체를 생성해서, 화면이동
     @IBAction func storyboardWithCodeButtonTapped(_ sender: Any) {
+        if let secondVC = storyboard?
+            .instantiateViewController(withIdentifier: "secondVC") as? SecondViewController {
+            present(secondVC, animated: true, completion: nil)
+        }
     }
     
     @IBAction func storyboardWithSegueButtonTapped(_ sender: Any) {
     }
-    
-    @IBAction func storyboardWithButtonSegueButtonTapped(_ sender: Any) {
-    }
-    
 }
 

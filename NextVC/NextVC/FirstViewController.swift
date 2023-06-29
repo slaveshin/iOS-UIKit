@@ -10,7 +10,7 @@ import UIKit
 class FirstViewController: UIViewController {
     
     let mainLabel = UILabel()
-    let backButton: UIButton = {
+    lazy var backButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Back", for: .normal)
         button.setTitleColor(.white, for: .normal)
