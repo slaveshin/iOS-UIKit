@@ -12,14 +12,17 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var mainLabel: UILabel!
     
+    var someString: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mainLabel.text = someString
     }
     
 
     @IBAction func backButtonTapped(_ sender: Any) {
+        dismiss(animated: true)
     }
     
 

@@ -28,11 +28,13 @@ class MainViewController: UIViewController {
     @IBAction func storyboardWithCodeButtonTapped(_ sender: Any) {
         if let secondVC = storyboard?
             .instantiateViewController(withIdentifier: "secondVC") as? SecondViewController {
+            secondVC.someString = "아빠상어"
             present(secondVC, animated: true, completion: nil)
         }
     }
     
     @IBAction func storyboardWithSegueButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "toThirdVC", sender: self)
     }
 }
 
