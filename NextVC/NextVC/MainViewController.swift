@@ -33,8 +33,25 @@ class MainViewController: UIViewController {
         }
     }
     
+    // 3-1) 스토리보드에서의 화면이동(간접 세그웨이)
     @IBAction func storyboardWithSegueButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "toThirdVC", sender: self)
     }
+    
+    // 3-2) 데이터 전달
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toThirdVC" {
+            let thirdVC = segue.destination as! ThirdViewController
+            thirdVC.someString = "엄마상어"
+        }
+        
+        // 4) Button Segue에서의 데이터 전달
+        if segue.identifier == "toFourthVC" {
+            let fourthVC = segue.destination as! FourthViewController
+            fourthVC.someString = "뚜루루뚜뚜"
+        }
+    }
+    
+    
 }
 
