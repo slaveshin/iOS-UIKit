@@ -115,7 +115,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4V-ek-2Dn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="jhb-Sb-5OQ" firstAttribute="centerX" secondItem="SLt-Jp-qwM" secondAttribute="centerX" id="5ie-cV-HOq"/>
                             <constraint firstItem="d43-ab-jYM" firstAttribute="centerX" secondItem="SLt-Jp-qwM" secondAttribute="centerX" id="Gql-A9-QzS"/>
@@ -156,7 +156,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kKV-ah-JaH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="wNe-lT-Omb" firstAttribute="centerX" secondItem="rhc-Qo-vcJ" secondAttribute="centerX" id="A0n-cB-jZx"/>
                             <constraint firstItem="kKV-ah-JaH" firstAttribute="bottom" secondItem="wNe-lT-Omb" secondAttribute="bottom" constant="40" id="jJk-X3-fsP"/>
@@ -196,7 +196,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mMi-sx-5Ah"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="1XY-Op-wvB" firstAttribute="centerX" secondItem="xrV-dR-NpX" secondAttribute="centerX" id="D4J-fa-2Tm"/>
                             <constraint firstItem="ABp-sl-jky" firstAttribute="centerX" secondItem="xrV-dR-NpX" secondAttribute="centerX" id="Rfp-p3-c4U"/>
@@ -216,6 +216,15 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

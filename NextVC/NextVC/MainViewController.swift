@@ -54,7 +54,7 @@ class MainViewController: UIViewController {
     
     // 4-2) 화면이동을 할지말지 조건을 결정할 수 있다.
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        <#code#>
+        return true
     }
     
 }
