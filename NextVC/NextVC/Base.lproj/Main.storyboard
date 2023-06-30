@@ -79,12 +79,53 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="zAe-XM-ODP" kind="presentation" identifier="toThirdVC" id="Xxj-Rg-8kv"/>
+                        <segue destination="ENc-Et-iva" kind="presentation" identifier="toThirdVC" id="v7l-of-QJl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56" y="-31"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="0eC-1q-5BW">
+            <objects>
+                <viewController id="ENc-Et-iva" customClass="ThirdViewController" customModule="NextVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhc-Qo-vcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThirdViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe4-L1-dVx">
+                                <rect key="frame" x="101" y="409" width="191" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNe-lT-Omb">
+                                <rect key="frame" x="165.66666666666666" y="767" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="WRt-cZ-7F5" eventType="touchUpInside" id="7jU-D5-k5X"/>
+                                    <action selector="backButtonTapped:" destination="ENc-Et-iva" eventType="touchUpInside" id="qvU-V1-CTt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kKV-ah-JaH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wNe-lT-Omb" firstAttribute="centerX" secondItem="rhc-Qo-vcJ" secondAttribute="centerX" id="A0n-cB-jZx"/>
+                            <constraint firstItem="kKV-ah-JaH" firstAttribute="bottom" secondItem="wNe-lT-Omb" secondAttribute="bottom" constant="40" id="jJk-X3-fsP"/>
+                            <constraint firstItem="Pe4-L1-dVx" firstAttribute="centerX" secondItem="rhc-Qo-vcJ" secondAttribute="centerX" id="n3J-4h-K48"/>
+                            <constraint firstItem="Pe4-L1-dVx" firstAttribute="centerY" secondItem="rhc-Qo-vcJ" secondAttribute="centerY" id="yZq-i7-hJU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="Pe4-L1-dVx" id="9dp-5z-un4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOt-mI-EkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="278"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="uFJ-d6-pkV">
@@ -125,46 +166,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfP-lr-jGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="-418"/>
-        </scene>
-        <!--Third View Controller-->
-        <scene sceneID="lhA-fY-2Xl">
-            <objects>
-                <viewController storyboardIdentifier="thirdVC" id="zAe-XM-ODP" customClass="ThirdViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lkl-RK-wPW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThirdViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWx-2j-Hfg">
-                                <rect key="frame" x="101" y="409" width="191" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-Ux-hn9">
-                                <rect key="frame" x="165.66666666666666" y="767" width="62" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
-                                <connections>
-                                    <action selector="backButtonTapped:" destination="zAe-XM-ODP" eventType="touchUpInside" id="eDb-OB-17R"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="75b-b1-dBX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="75b-b1-dBX" firstAttribute="bottom" secondItem="Fzg-Ux-hn9" secondAttribute="bottom" constant="40" id="GL7-ry-6io"/>
-                            <constraint firstItem="cWx-2j-Hfg" firstAttribute="centerX" secondItem="lkl-RK-wPW" secondAttribute="centerX" id="mHp-1r-mkd"/>
-                            <constraint firstItem="Fzg-Ux-hn9" firstAttribute="centerX" secondItem="lkl-RK-wPW" secondAttribute="centerX" id="tl4-8d-U65"/>
-                            <constraint firstItem="cWx-2j-Hfg" firstAttribute="centerY" secondItem="lkl-RK-wPW" secondAttribute="centerY" id="uAF-Fd-52a"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="mainLabel" destination="cWx-2j-Hfg" id="XoA-c7-aec"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DqE-7h-ZBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="885" y="258"/>
         </scene>
     </scenes>
     <resources>
