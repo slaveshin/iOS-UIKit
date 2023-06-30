@@ -1,6 +1,6 @@
 # NextVC(iOS)
 
-`storyboard` `segue` `prepare` `data passing`
+`storyboard` `segue` `override prepare` `data passing` `should perform segue`
 <br><br>
 4가지 화면 이동 연습<br>
 

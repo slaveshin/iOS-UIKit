@@ -11,4 +11,4 @@
 |  06  |       <a href="./SliderTimer">SliderTimer</a>       |     slider를 활용한 타이머      |                `storyboard` `slider` `audio service` `stack view`                |
 |  07  | <a href="./PracticeTextField">PracticeTextField</a> |     델리게이트 패턴 연습용      |             `storyboard` `text field` `delegate pattern` `responder`             |
 |  08  |       <a href="./LoginScreen">LoginScreen</a>       |      넷플릭스 로그인 화면       | `autolayout code` `alert` `autolayout animation` `delegate pattern` `add target` |
-|  09  |            <a href="./NextVC">NextVC</a>            |       4가지 화면이동 연습       |                                   `storyboard`                                   |
+|  09  |            <a href="./NextVC">NextVC</a>            |       4가지 화면이동 연습       |  `storyboard` `segue` `override prepare` `data passing` `should perform segue`   |

@@ -45,13 +45,17 @@ class MainViewController: UIViewController {
             thirdVC.someString = "엄마상어"
         }
         
-        // 4) Button Segue에서의 데이터 전달
+        // 4-1) Button Segue에서의 데이터 전달
         if segue.identifier == "toFourthVC" {
             let fourthVC = segue.destination as! FourthViewController
             fourthVC.someString = "뚜루루뚜뚜"
         }
     }
     
+    // 4-2) 화면이동을 할지말지 조건을 결정할 수 있다.
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        <#code#>
+    }
     
 }
 
