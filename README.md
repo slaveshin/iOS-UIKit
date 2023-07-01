@@ -1,6 +1,7 @@
 # practice-applications-iOS
-
-| 순번 |                       앱 이름                       |              설명               |                                            참고                                            |
+해당 레포지토리는 직접 어플들을 만들어보면서 기록하고 있는 공간입니다!
+<br>
+| 순번 |                       앱 이름                       |              설명               |                                            공부 내용                                            |
 | :--: | :-------------------------------------------------: | :-----------------------------: | :----------------------------------------------------------------------------------------: |
 |  00  |        <a href="./MyFirstApp">MyFirstApp</a>        |        Xcode랑 친해지기         |                    `Xcode` `storyboard` `colorLiteral` `viewDidLoad()`                     |
 |  01  |          <a href="./DiceGame">DiceGame</a>          |           주사위 게임           |                            `storyboard` `auto layout` `assets`                             |
