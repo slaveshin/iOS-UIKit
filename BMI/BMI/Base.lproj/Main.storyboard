@@ -80,10 +80,14 @@
                                 <buttonConfiguration key="configuration" style="filled" title="BMI 계산하기">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="calButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXH-2I-pfX"/>
+                                    <segue destination="fco-HP-cod" kind="presentation" identifier="toSecondVC" id="wBT-H8-cUO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TLP-fo-tOJ" secondAttribute="trailing" constant="30" id="1o0-ak-x5I"/>
                             <constraint firstItem="TLP-fo-tOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="BpM-Zm-4Ug"/>
@@ -92,21 +96,26 @@
                             <constraint firstItem="rpH-P2-86s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyA-V1-fZW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightTextField" destination="yKs-E7-cR2" id="dMH-rb-wfL"/>
+                        <outlet property="mainLabel" destination="zfV-51-oeu" id="FGI-zV-fjW"/>
+                        <outlet property="weightTextField" destination="jr7-fK-X0L" id="xUO-r3-gR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="v6X-yd-9Vc">
             <objects>
-                <viewController id="fco-HP-cod" sceneMemberID="viewController">
+                <viewController id="fco-HP-cod" customClass="SecondViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OV1-td-xVo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t58-Dy-228">
-                                <rect key="frame" x="96.666666666666686" y="159" width="200" height="128"/>
+                                <rect key="frame" x="96.666666666666686" y="100" width="200" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 BMI는.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oob-XZ-hq2">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -135,7 +144,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1F-hh-PsA">
-                                <rect key="frame" x="146.66666666666666" y="327" width="100" height="40"/>
+                                <rect key="frame" x="146.66666666666666" y="268" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="cAY-Ad-2QI"/>
                                     <constraint firstAttribute="height" constant="40" id="rIj-G5-CXn"/>
@@ -144,6 +153,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Back">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="fco-HP-cod" eventType="touchUpInside" id="WxE-8h-F6l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9SC-qT-ozN"/>
@@ -155,6 +167,10 @@
                             <constraint firstItem="t58-Dy-228" firstAttribute="centerX" secondItem="OV1-td-xVo" secondAttribute="centerX" id="vQm-Uw-vTt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="wMl-Pn-ajX" id="hWn-0I-8LJ"/>
+                        <outlet property="bmiNumberLabel" destination="12l-o0-YPf" id="Mxg-Kr-o2b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQY-ZM-GWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,6 +180,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
