@@ -117,7 +117,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t58-Dy-228">
                                 <rect key="frame" x="96.666666666666686" y="100" width="200" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 BMI는.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oob-XZ-hq2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 BMI는..🔥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oob-XZ-hq2">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="40" id="rIj-G5-CXn"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                <buttonConfiguration key="configuration" style="filled" title="돌아가기">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
