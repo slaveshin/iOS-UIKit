@@ -14,6 +14,7 @@
 		2C3F3E502A4EAABE001BD6E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3F3E4F2A4EAABE001BD6E6 /* Assets.xcassets */; };
 		2C3F3E532A4EAABE001BD6E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3F3E512A4EAABE001BD6E6 /* LaunchScreen.storyboard */; };
 		2C3F3E5B2A4EC284001BD6E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F3E5A2A4EC284001BD6E6 /* SecondViewController.swift */; };
+		2C3F3E602A55858E001BD6E6 /* BMICalculatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F3E5F2A55858E001BD6E6 /* BMICalculatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C3F3E522A4EAABE001BD6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C3F3E542A4EAABE001BD6E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C3F3E5A2A4EC284001BD6E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2C3F3E5F2A55858E001BD6E6 /* BMICalculatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		2C3F3E452A4EAABD001BD6E6 /* BMI */ = {
 			isa = PBXGroup;
 			children = (
+				2C3F3E5C2A558514001BD6E6 /* Models */,
+				2C3F3E5E2A55852C001BD6E6 /* Views */,
+				2C3F3E5D2A558523001BD6E6 /* Controllers */,
 				2C3F3E462A4EAABD001BD6E6 /* AppDelegate.swift */,
 				2C3F3E482A4EAABD001BD6E6 /* SceneDelegate.swift */,
-				2C3F3E4A2A4EAABD001BD6E6 /* ViewController.swift */,
-				2C3F3E5A2A4EC284001BD6E6 /* SecondViewController.swift */,
-				2C3F3E4C2A4EAABD001BD6E6 /* Main.storyboard */,
 				2C3F3E4F2A4EAABE001BD6E6 /* Assets.xcassets */,
 				2C3F3E512A4EAABE001BD6E6 /* LaunchScreen.storyboard */,
 				2C3F3E542A4EAABE001BD6E6 /* Info.plist */,
 			);
 			path = BMI;
+			sourceTree = "<group>";
+		};
+		2C3F3E5C2A558514001BD6E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F3E5F2A55858E001BD6E6 /* BMICalculatorManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C3F3E5D2A558523001BD6E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F3E4A2A4EAABD001BD6E6 /* ViewController.swift */,
+				2C3F3E5A2A4EC284001BD6E6 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C3F3E5E2A55852C001BD6E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F3E4C2A4EAABD001BD6E6 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 				2C3F3E5B2A4EC284001BD6E6 /* SecondViewController.swift in Sources */,
 				2C3F3E4B2A4EAABD001BD6E6 /* ViewController.swift in Sources */,
 				2C3F3E472A4EAABD001BD6E6 /* AppDelegate.swift in Sources */,
+				2C3F3E602A55858E001BD6E6 /* BMICalculatorManager.swift in Sources */,
 				2C3F3E492A4EAABD001BD6E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
