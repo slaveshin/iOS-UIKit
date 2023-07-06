@@ -15,4 +15,4 @@
 | 08 | <a href="./LoginScreen">LoginScreen</a> | 넷플릭스 로그인 화면 | `autolayout code` `alert` `autolayout animation` `delegate pattern` `add target` |
 | 09 | <a href="./NextVC">NextVC</a> | 4가지 화면이동 연습 | `storyboard` `segue` `override prepare` `data passing` `should perform segue` |
 | 10 | <a href="./BMI">BMI</a> | 화면이동 응용 BMI 측정기 | `storyboard` `segue` `override prepare` `data passing` `should perform segue` `stack view` |
-| 11 | <a href="./LifeCycle">LifeCycle</a> | 화면이동 응용 BMI 측정기 | `storyboard` `segue` `Life Cycle` |
+| 11 | <a href="./LifeCycle">LifeCycle</a> | 앱의 생명주기 공부용 앱 | `storyboard` `segue` `Life Cycle` |
