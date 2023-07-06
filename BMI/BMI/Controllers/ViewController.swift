@@ -31,13 +31,6 @@ class ViewController: UIViewController {
         weightTextField.placeholder = "kg"
     }
     
-    @IBAction func calButtonTapped(_ sender: Any) {
-        guard let height = heightTextField.text,
-              let weight = weightTextField.text else { return }
-        
-        bmiManager.calBMI(height: height, weight: weight)
-    }
-    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if heightTextField.text == "" || weightTextField.text == "" {
             mainLabel.text = "키와 몸무게를 입력하셔야 합니다!"
@@ -50,9 +43,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecondVC" {
            let secondVC = segue.destination as! SecondViewController
-            secondVC.bmi = bmiManager.getBMIResult()
-            secondVC.color = bmiManager.getBackgroundColor()
-            secondVC.advice = bmiManager.getAdvice()
+            guard let height = heightTextField.text,
+                  let weight = weightTextField.text else { return }
+            secondVC.bmi = bmiManager.getBMI(height: height, weight: weight)
         }
     }
 }

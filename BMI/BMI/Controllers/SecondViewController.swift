@@ -12,9 +12,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var bmiNumberLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
-    var bmi: Double?
-    var color: UIColor?
-    var advice: String?
+    var bmi: BMI?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +26,12 @@ class SecondViewController: UIViewController {
         bmiNumberLabel.layer.cornerRadius = 5
         
         guard let bmi = bmi else { return }
-        bmiNumberLabel.text = String(bmi)
-        bmiNumberLabel.backgroundColor = color
+        bmiNumberLabel.text = String(bmi.value)
+        bmiNumberLabel.backgroundColor = bmi.matchColor
         
         bmiNumberLabel.textColor = .white
         
-        adviceLabel.text = advice
+        adviceLabel.text = String(bmi.advice)
     }
     
     

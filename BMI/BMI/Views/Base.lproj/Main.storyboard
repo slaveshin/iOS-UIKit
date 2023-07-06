@@ -81,7 +81,6 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="calButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXH-2I-pfX"/>
                                     <segue destination="fco-HP-cod" kind="presentation" identifier="toSecondVC" id="wBT-H8-cUO"/>
                                 </connections>
                             </button>
