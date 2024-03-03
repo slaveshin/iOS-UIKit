@@ -8,4 +8,4 @@
 
 ### main screen
 
-<img src="" width="300"/>
+<img src="https://github.com/slaveshin/practice-applications-iOS/assets/68256612/c3b0be0e-c3e6-4fb9-bcb8-95ebb8a086b4" width="300"/>
