@@ -17,4 +17,4 @@
 | 10 | <a href="./BMI">BMI</a> | 화면이동 응용 BMI 측정기 | `storyboard` `segue` `override prepare` `data passing` `should perform segue` `stack view` |
 | 11 | <a href="./LifeCycle">LifeCycle</a> | 앱의 생명주기 공부용 앱 | `storyboard` `segue` `Life Cycle` |
 | 12 | <a href="./NavTab">NavTab</a> | 네비게이션, 탭바 스토리보드 구현 앱 | `storyboard` `navigation controller` `Tab bar controller` |
-| 13 | <a href="./NavTabCode">NavTab</a> | 네비게이션, 탭바 코드 구현 앱 | `code UI` `navigation controller` `Tab bar controller` |
+| 13 | <a href="./NavTabCode">NavTabCode</a> | 네비게이션, 탭바 코드 구현 앱 | `code UI` `navigation controller` `Tab bar controller` |
