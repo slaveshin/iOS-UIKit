@@ -10,14 +10,14 @@ import UIKit
 class LoginViewController: UIViewController {
     
     // 로그인 버튼
-    private lazy var nextButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(type: .custom)
         button.backgroundColor = .blue
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button
     }()
 
@@ -27,52 +27,28 @@ class LoginViewController: UIViewController {
     }
     
     func makeUI() {
-        view.addSubview(nextButton)
+        view.backgroundColor = .white
+        
+        view.addSubview(loginButton)
         
         NSLayoutConstraint.activate([
-            nextButton.widthAnchor.constraint(equalToConstant: 120),
-            nextButton.heightAnchor.constraint(equalToConstant: 45),
-            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            loginButton.widthAnchor.constraint(equalToConstant: 120),
+            loginButton.heightAnchor.constraint(equalToConstant: 45),
+            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
-    @objc func nextButtonTapped(){
-        // 탭바컨트롤러의 생성
-        let tabBarVC = UITabBarController()
+    @objc func loginButtonTapped() {
+        // 전화면의 isLoggedIn속성에 접근하기 ⭐️
+        if let presentingVC = presentingViewController { // 옵셔널 바인딩
+        let tabBarCon = presentingVC as! UITabBarController   // 탭바에 접근하기
+        let nav = tabBarCon.viewControllers?[0] as! UINavigationController  // 네비게이션바에 접근하기
+        let firstVC = nav.viewControllers[0] as! FirstViewController  // FirstVC에 접근하기
+        firstVC.isLoggedIn.toggle()  // 로그인 되었다고 상태 변화시키기 (실제 앱에서 이렇게 구현할 일은 없음)
+      }
         
-        // 첫번째 화면은 네비게이션컨트롤러로 만들기 (기본루트뷰 설정)
-        let vc1 = UINavigationController(rootViewController: FirstViewController())
-        let vc2 = SecondViewController()
-        let vc3 = ThirdViewController()
-        let vc4 = FourthViewController()
-        let vc5 = FifthViewController()
-        
-        // 탭바 이름들 설정
-        vc1.title = "Main"
-        vc2.title = "Search"
-        vc3.title = "Post"
-        vc4.title = "Likes"
-        vc5.title = "Me"
-        
-        // 탭바로 사용하기 위한 뷰 컨트롤러들 설정
-        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: false)
-        tabBarVC.modalPresentationStyle = .fullScreen
-        tabBarVC.tabBar.backgroundColor = .white
-        
-        // 탭바 이미지 설정 (이미지는 애플이 제공하는 것으로 사용)
-        guard let items = tabBarVC.tabBar.items else { return }
-        
-        items[0].image = UIImage(systemName: "square.and.arrow.up")
-        items[1].image = UIImage(systemName: "folder")
-        items[2].image = UIImage(systemName: "paperplane")
-        items[3].image = UIImage(systemName: "doc")
-        items[4].image = UIImage(systemName: "note")
-        
-        // 프리젠트로 탭바를 띄우기
-        present(tabBarVC, animated: true, completion: nil)
+        dismiss(animated: true)
     }
-
-
 }
 
