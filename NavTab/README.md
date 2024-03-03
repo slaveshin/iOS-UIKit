@@ -1,6 +1,6 @@
 # MyTab(iOS)
 
-`storyboard` `segment control`
+`storyboard` `navigation controller` `Tab bar controller`
 
 ### main screen
 
