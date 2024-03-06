@@ -15,6 +15,8 @@
 		2C1B537D2B9565FE0054B120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B537B2B9565FE0054B120 /* LaunchScreen.storyboard */; };
 		2C1B53852B9583240054B120 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B53842B9583240054B120 /* MovieCell.swift */; };
 		2C1B538A2B95D7620054B120 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B53892B95D7620054B120 /* Movie.swift */; };
+		2C1B538C2B97653D0054B120 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B538B2B97653D0054B120 /* DataManager.swift */; };
+		2C1B538E2B97F4520054B120 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B538D2B97F4520054B120 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2C1B537E2B9565FE0054B120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1B53842B9583240054B120 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		2C1B53892B95D7620054B120 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2C1B538B2B97653D0054B120 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2C1B538D2B97F4520054B120 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		2C1B53862B95D7090054B120 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C1B538B2B97653D0054B120 /* DataManager.swift */,
 				2C1B53892B95D7620054B120 /* Movie.swift */,
 			);
 			path = Models;
@@ -92,6 +97,7 @@
 		2C1B53882B95D7250054B120 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C1B538D2B97F4520054B120 /* DetailViewController.swift */,
 				2C1B53742B9565FC0054B120 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -169,10 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1B53752B9565FC0054B120 /* ViewController.swift in Sources */,
+				2C1B538C2B97653D0054B120 /* DataManager.swift in Sources */,
 				2C1B53712B9565FC0054B120 /* AppDelegate.swift in Sources */,
 				2C1B53852B9583240054B120 /* MovieCell.swift in Sources */,
 				2C1B53732B9565FC0054B120 /* SceneDelegate.swift in Sources */,
 				2C1B538A2B95D7620054B120 /* Movie.swift in Sources */,
+				2C1B538E2B97F4520054B120 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
