@@ -20,3 +20,4 @@
 | 13 | <a href="./NavTabCode">NavTabCode</a> | 네비게이션, 탭바 코드 구현 앱 | `code UI` `navigation controller` `Tab bar controller` |
 | 14 | <a href="./TableView">TableView</a> | 테이블뷰 구현 앱 | `storyboard` `tableview` `delegate` `SceneDelegate` `model` `custom cell` |
 | 15 | <a href="./TableViewCode">TableViewCode</a> | 테이블뷰 코드 구현 앱 | `code` `tableview` `delegate` `SceneDelegate` `model` `custom cell` |
+| 16 | <a href="./MemberList">MemberList</a> | 주소록 앱 | `code` `tableview` `delegate` `SceneDelegate` `model` `custom cell` `notification` `subscript` `didSet` `navigationbar` |
