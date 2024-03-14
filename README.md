@@ -1,4 +1,4 @@
-# practice-applications-iOS
+# iOS-UIKit
 
 해당 레포지토리는 직접 어플들을 만들어보면서 기록하고 있는 공간입니다!
 <br>
